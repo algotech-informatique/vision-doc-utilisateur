@@ -5,13 +5,9 @@
 <head>
         <!-- Page information -->
         <meta charset="UTF-8" />
-        <meta name="node_id" content="index">
+        <meta name="node_id" content="étape 4 - créer sa logique">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< Updated upstream
-        <link rel="shortcut icon" href="favicon.ico" />
-=======
-        <link rel="shortcut icon" href=".favicon.ico" />
->>>>>>> Stashed changes
+        <link rel="shortcut icon" href="..favicon.ico" />
 
         <!-- Set title -->
         <title>Documentation</title>
@@ -20,17 +16,10 @@
         <link rel="stylesheet" href="customizations.css" />
 <link rel="external" href="logo.png" />
 <link rel="external" href="icon.png" />
-<<<<<<< Updated upstream
-<script src="/obs.html/static/obsidian_core.js"></script>
-<script src="/obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="/obs.html/static/master.css" />
-<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
-=======
-<script src="./obs.html/static/obsidian_core.js"></script>
-<script src="./obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="./obs.html/static/master.css" />
-<script src="./obs.html/static/mermaid.9.0.1.min.js"></script>
->>>>>>> Stashed changes
+<script src="../obs.html/static/obsidian_core.js"></script>
+<script src="../obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="../obs.html/static/master.css" />
+<script src="../obs.html/static/mermaid.9.0.1.min.js"></script>
 <script>
   MathJax = {
     loader: {
@@ -52,16 +41,16 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-<script src="./obs.html/static/flexsearch.bundle.js"></script>
-<script src="./obs.html/static/pako.js"></script>
-<script src="./obs.html/static/search.js"></script>
-<script src="./obs.html/static/dirtree.js"></script>
+<script src="../obs.html/static/flexsearch.bundle.js"></script>
+<script src="../obs.html/static/pako.js"></script>
+<script src="../obs.html/static/search.js"></script>
+<script src="../obs.html/static/dirtree.js"></script>
 
 
         <!-- Onload tweaks -->
         <script>
-                const CURRENT_NODE = 'index';
-                const HTML_URL_PREFIX = '.';
+                const CURRENT_NODE = 'étape 4 - créer sa logique';
+                const HTML_URL_PREFIX = '..';
         </script>
 </head>
 
@@ -119,11 +108,7 @@
         <div id="page_holder" class="flex_col">
                 <div id="header" class="header">
                         <div id="header_flex" class="flex_row header_row">
-<<<<<<< Updated upstream
-                                <a href="index.html" id="homelink">
-=======
-                                <a href=".index.html" id="homelink">
->>>>>>> Stashed changes
+                                <a href="..index.html" id="homelink">
                                         <img src="logo.png" alt="Studio" style="width: 150px"></a>
                                 <div id="navbar" class="navbar requires_js">
                                         <a class="navbar-link" href="/04 - Créer votre UI/La liste des widgets/Widget Board.html" title="Widgets">Widgets</a>
@@ -167,7 +152,7 @@
 		<li><a class="" href="../02 - Créer sa première application/Étape 1 - Spécification de notre app.html"  >Étape 1 - Spécification de notre app</a></li>
 		<li><a class="" href="../02 - Créer sa première application/Étape 2 - Créer ses modèles.html"  >Étape 2 - Créer ses modèles</a></li>
 		<li><a class="" href="../02 - Créer sa première application/Étape 3 - Créer ses interfaces.html"  >Étape 3 - Créer ses interfaces</a></li>
-		<li><a class="" href="../02 - Créer sa première application/Étape 4 - Créer sa logique.html"  >Étape 4 - Créer sa logique</a></li>
+		<li><a class="active" href="../02 - Créer sa première application/Étape 4 - Créer sa logique.html"  >Étape 4 - Créer sa logique</a></li>
 		<li><a class="" href="../02 - Créer sa première application/Étape 5 - Établir les connexions.html"  >Étape 5 - Établir les connexions</a></li>
 		<li><a class="" href="../02 - Créer sa première application/Étape 6 - Publier son application.html"  >Étape 6 - Publier son application</a></li>
 	</ul>
@@ -694,80 +679,327 @@
 </div>
                         </div>
                         <div class="container">
-                                <div class="content"><h1 id="introduction">Introduction</h1>
+                                <div class="content"><h1 id="etape-4-creer-sa-logique">Étape 4 - Créer sa logique</h1>
 <div class="toc">
 <ul>
-<li><a href="#introduction" class="anchor-link">Introduction</a></li>
-<li><a href="#les-sections" class="anchor-link">Les sections</a><ul>
-<li><a href="#chapitre-1-vue-d-ensemble" class="anchor-link">Chapitre 1  - Vue d'ensemble</a></li>
-<li><a href="#chapitre-2-creer-sa-premiere-application" class="anchor-link">Chapitre 2 - Créer sa première application</a></li>
-<li><a href="#chapitre-3-modeliser-vos-donnees" class="anchor-link">Chapitre 3 - Modéliser vos données</a></li>
-<li><a href="#chapitre-4-creer-votre-ui" class="anchor-link">Chapitre 4 - Créer votre UI</a></li>
-<li><a href="#chapitre-5-workflow-creer-votre-logique-metier" class="anchor-link">Chapitre 5 - Workflow, créer votre logique métier</a></li>
-<li><a href="#chapitre-6-smartflows-connecter-vos-apps" class="anchor-link">Chapitre 6 - Smartflows, connecter vos apps</a></li>
-<li><a href="#chapitre-7-generer-des-rapports" class="anchor-link">Chapitre 7 - Générer des rapports</a></li>
-<li><a href="#chapitre-8-authentification-et-autorisation" class="anchor-link">Chapitre 8 - Authentification et autorisation</a></li>
-<li><a href="#chapitre-9-bonnes-pratiques" class="anchor-link">Chapitre 9 - Bonnes pratiques</a></li>
-<li><a href="#chapitre-10-comment-faire" class="anchor-link">Chapitre 10 - Comment faire ...</a></li>
-<li><a href="#references-sur-les-noeuds" class="anchor-link">Références sur les noeuds</a></li>
+<li><a href="#etape-4-creer-sa-logique" class="anchor-link">Étape 4 - Créer sa logique</a></li>
+<li><a href="#l-api-meteo" class="anchor-link">L'API Météo</a><ul>
+<li><a href="#recuperer-les-donnees-meteo" class="anchor-link">Récupérer les données météo</a></li>
+<li><a href="#editer-un-smart-object" class="anchor-link">Éditer un Smart Object</a></li>
 </ul>
 </li>
-<li><a href="#un-dernier-mot" class="anchor-link">Un dernier mot...</a></li>
+<li><a href="#la-recherche-de-ville" class="anchor-link">La recherche de ville</a><ul>
+<li><a href="#le-smartflow-pour-recuperer-la-liste-des-communes-francaises" class="anchor-link">Le Smartflow pour récupérer la liste des communes françaises</a></li>
+<li><a href="#le-workflow-avec-le-formulaire-de-recherche" class="anchor-link">Le workflow avec le formulaire de recherche</a></li>
+</ul>
+</li>
+<li><a href="#mettre-a-jour-le-systeme-d-unites" class="anchor-link">Mettre à jour le système d'unités</a></li>
+<li><a href="#recuperer-le-smart-object-config-meteo" class="anchor-link">Récupérer le Smart Object Config Météo</a></li>
 </ul>
 </div>
-<p>Bienvenue dans la documentation officielle de Vision Studio. <br />
-Le but de cette page est de présenter la technologie mais également la philosophie de cette documentation et les différents chapitres qu'elle aborde.   </p>
-<p>Cette documentation est basée sur l'expérience que nous avons de la technologie Vision. Nous avons réalisé de nombreuses applications et au moment où nous écrivons ces lignes, plusieurs de nos clients et partenaires intégrateurs utilisent quotidiennement notre Studio. <br />
-Nous présentons ici les différents modules et la façon dont nous recommandons leur usage.   </p>
-<p>De plus, l'ordre des chapitres suit la logique d'une création d'application avec Vision Studio. Si vous êtes expérimenté, ou avez suivi une formation, sentez-vous libre de sauter les sections que vous maîtrisez.   </p>
-<h1 id="les-sections">Les sections</h1>
-<h2 id="chapitre-1-vue-d-ensemble">Chapitre 1  - Vue d'ensemble</h2>
-<p>C'est le chapitre dans lequel vous vous trouvez et vous faites bien ! Car vous allez y trouvez:   </p>
+<div class="callout callout-hint active" rasa="1">
+<div class="callout-title ">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="18" y1="2" x2="22" y2="6"></line><path d="M7.5 20.5L19 9l-4-4L3.5 16.5 2 22z"></path></svg>
+</div>
+<div class="callout-title-name">Hint
+</div>
+</div>
+<div class="callout-content">
+<p>Retrouvez la documentation sur les smartflows <a href="../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">ici</a> !</p>
+</div>
+</div>
+<p>C'est parti pour la création de la logique de l'application 😁 !   </p>
+<p>Remettons-nous d'abord en tête les fonctionnalités de l'application :    </p>
 <ul>
-<li>une description des différents modules et outils.   </li>
-<li>un gif animé de Benedict Cumberbatch à la fin de cette page   </li>
+<li>Afficher les données météorologiques d'une ville choisie   </li>
+<li>Rechercher une ville française pour afficher sa météo   </li>
+<li>Choisir le système d'unités pour les données affichées   </li>
+<li>Enregistrer la dernière ville saisie pour la prochaine ouverture de l'application   </li>
 </ul>
-<h2 id="chapitre-2-creer-sa-premiere-application">Chapitre 2 - Créer sa première application</h2>
-<p>Un rapide tutoriel commençant ici -&gt;  <a href="./02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%201%20-%20Sp%C3%A9cification%20de%20notre%20app.html">Étape 1 - Spécification de notre app</a> balayant les différents modules, sans rentrer dans la complexité.   </p>
-<h2 id="chapitre-3-modeliser-vos-donnees">Chapitre 3 - Modéliser vos données</h2>
-<p>Ce chapitre aborde la partie la plus importante lors de la création de votre application : <a href="./not_created.html" class="nonexistent-link">la modélisation de vos données</a>. Pour ce faire, Vision propose plusieurs outils :   </p>
+<p>Pour afficher les données météorologiques nous devons récupérer les informations en provenance d'une API. Pour faire cela, nous allons créer ensemble un <a href="../_glossaire/Glossaire.html">smartflow</a> qui utilisera l'API <a href="https://openweathermap.org/" target="_blank" class="external-link" target="_blank" class="external-link">Open Weather Map</a>.   </p>
+<p>Pour changer de ville, nous utiliserons un <a href="../_glossaire/Glossaire.html">workflow</a> qui nous sera doté d'un formulaire pour rechercher et saisir la ville. <br />
+La liste des villes proviendra elle aussi d'un <a href="../_glossaire/Glossaire.html">smartflow</a> qui utilisera l'API <a href="https://geo.api.gouv.fr/decoupage-administratif/communes" target="_blank" class="external-link">Découpage administratif des communes</a>.   </p>
+<p>Un troisième <a href="../_glossaire/Glossaire.html">smartflow</a> va être créé pour pouvoir mettre à jour le système d'unités utilisé pour l'affichage des données météo.   </p>
+<p>Nous terminerons par un dernier <a href="../_glossaire/Glossaire.html">smartflow</a> qui se lancera au lancement de l'application et qui permettra de récupérer notre <a href="../_glossaire/Glossaire.html">Smart Object</a> en base de données ou de l'initialiser (si c'est la première fois que l'on accède à l'application).   </p>
+<h1 id="l-api-meteo">L'API Météo</h1>
+<div class="callout callout-note active" rasa="1">
+<div class="callout-title ">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><line x1="18" y1="2" x2="22" y2="6"></line><path d="M7.5 20.5L19 9l-4-4L3.5 16.5 2 22z"></path></svg>
+</div>
+<div class="callout-title-name">Note
+</div>
+</div>
+<div class="callout-content">
+<p>Comme annoncé au dessus, nous utilisons une API <a href="https://openweathermap.org/" target="_blank" class="external-link" target="_blank" class="external-link">Open Weather Map</a>. Il va falloir tout d'abord créer un compte sur leur site internet pour récupérer une API Key qui va nous permettre d'accéder à leur API.</p>
+</div>
+</div>
+<p>Créons un premier <a href="../_glossaire/Glossaire.html">smartflow</a> pour récupérer les données météorologiques d'une ville et appelons le <em>get_current_weather</em>.   </p>
+<p>Ce <a href="../_glossaire/Glossaire.html">smartflow</a> va prendre un paramètre d'entrée : un <a href="../_glossaire/Glossaire.html">Smart Object</a> de type <code>Config Météo</code> (cf. <a href="../02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%202%20-%20Cr%C3%A9er%20ses%20mod%C3%A8les.html">l'étape 2</a>). <br />
+Nous appelons cet variable d'entrée: <code>config</code>.   </p>
+<p>Ce <a href="../_glossaire/Glossaire.html">Smart Object</a> sera mis à jour par le <a href="../_glossaire/Glossaire.html">smartflow</a> avec les données récupérées par l'API. <br />
+Pour le moment, nous ne nous soucions pas de la manière de récupérer ce <a href="../_glossaire/Glossaire.html">Smart Object</a>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_var_config.png" />   </p>
+<p>Pour commencer, comme pour tout <a href="../_glossaire/Glossaire.html">smartflow</a>, nous ajoutons un <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/D%C3%89PART.html">nœud Départ</a>.   </p>
+<h2 id="recuperer-les-donnees-meteo">Récupérer les données météo</h2>
+<p>Pour effectuer la requête à l'API, nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Service.html">nœud Service</a>.   </p>
+<p>Grâce à la <a href="https://openweathermap.org/current#geocoding" target="_blank" class="external-link" target="_blank" class="external-link">documentation Open Weather Map</a>, nous avons toutes les informations pour appeler correctement l'API.   </p>
+<p>Voici la configuration de notre nœud :   </p>
+<table>
+<thead>
+<tr>
+<th>Entrée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Get</td>
+</tr>
+<tr>
+<td>Type de réponse</td>
+<td>Json</td>
+</tr>
+<tr>
+<td>Url</td>
+<td><a href="https://api.openweathermap.org/data/2.5/weather" target="_blank" class="external-link">https://api.openweathermap.org/data/2.5/weather</a></td>
+</tr>
+<tr>
+<td>Clé-Valeur</td>
+<td>Vrai</td>
+</tr>
+</tbody>
+</table>
+<p>Ensuite pour les paramètres :    </p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>appid</td>
+<td>chaîne de caractères</td>
+<td>La clé api Open Weather Map. Pour le tutoriel, l'API key sera renseignée en tant que paramètres du connecteur Météo.</td>
+</tr>
+<tr>
+<td>lang</td>
+<td>chaîne de caractères</td>
+<td>La langue retournée par l'api, nous choisirons fr pour avoir le résultat en français</td>
+</tr>
+<tr>
+<td>q</td>
+<td>chaîne de caractères</td>
+<td>La ville pour la météo, ici nous le lierons à la propriété <code>Ville</code> de notre variable <code>config</code></td>
+</tr>
+<tr>
+<td>units</td>
+<td>chaîne de caractères</td>
+<td>Le système d'unités, ici nous le lierons à la propriété <code>Units</code> de notre variable <code>config</code></td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_service.png" />   </p>
+<p>Nous allons nous assurer que le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Service.html">nœud Service</a> fonctionne en lançant l'aperçu... 😟   </p>
+<p>Cela ne fonctionne pas pour le moment car nous n'avons pas encore de <a href="../_glossaire/Glossaire.html">Smart Object</a> en base de données. <br />
+Nous allons débrancher les paramètres <code>q</code> et <code>units</code> et remplir directement le nom d'une ville et mettre la valeur <code>metric</code> pour le système d'unités.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_service_test.gif" />   </p>
+<p>Dans le débogueur, dans la section variables, nous retrouvons le résultat du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Service.html">nœud Service</a>.   </p>
+<h2 id="editer-un-smart-object">Éditer un Smart Object</h2>
+<p>Nous allons maintenant exploiter le résultat du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Service.html">nœud Service</a> pour éditer notre variable <em>config</em>.   </p>
+<p>Pour cela, nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Explorer%20un%20objet.html">nœud Explorer un objet</a> pour accéder aux champs de l'objet. Certaines données qui nous intéressent sont directement disponibles depuis le sous-objet <code>main</code> du résultat : la température, la température minimale, la température maximale, la pression atmosphérique, l'humidité et le ressenti.   </p>
+<p>Nous pouvons ensuite utiliser le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Editer%20un%20Smart%20Object.html">nœud Éditer un Smart Object</a> pour lier les données aux propriétés du <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>config</code>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_bind_data.png" />   </p>
+<div class="callout callout-tip active" rasa="1">
+<div class="callout-title ">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"></path></svg>
+</div>
+<div class="callout-title-name">Tip
+</div>
+</div>
+<div class="callout-content">
+<p>N'hésitez pas à tester votre <a href="../_glossaire/Glossaire.html">smartflow</a> à chaque nouvelle modification pour vérifier que tout fonctionne 😉 !</p>
+</div>
+</div>
+<p>... ☹️ Oups ! Une erreur est survenue pendant la lecture du <a href="../_glossaire/Glossaire.html">workflow</a> ?   </p>
+<p>Pas d'inquiétude c'est normal !    </p>
+<p>Nous essayons d'éditer un <a href="../_glossaire/Glossaire.html">Smart Object</a> qui n'existe pas, forcément ça ne peut pas fonctionner ! Pour palier à ce petit problème pendant nos tests, nous allons créer un <a href="../_glossaire/Glossaire.html">Smart Object</a> en amont du <a href="../_glossaire/Glossaire.html">smartflow</a>. <br />
+Nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Cr%C3%A9er%20un%20Smart%20Object.html">nœud Créer un Smart Object</a> pour créer un <a href="../_glossaire/Glossaire.html">Smart Object</a> de type <code>Config Météo</code> que nous nommerons <code>config_test</code>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_config_test.png" />   </p>
+<p>Lorsqu'on le donne en entrée du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Editer%20un%20Smart%20Object.html">nœud Éditer un Smart Object</a> et qu'on lance l'aperçu du <a href="../_glossaire/Glossaire.html">smartflow</a>, ça fonctionne !   </p>
+<p>Passons maintenant à la suite des données que nous souhaitons récupérer. Le nom de l'icône et la description de la météo se situent dans le premier élément du sous-objet tableau <code>weather</code>.    </p>
+<p>Pour y accéder, nous allons ajouter à notre <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Explorer%20un%20objet.html">nœud Explorer un objet</a> le champ <code>weather</code> de type objet et multiple. <br />
+Avec le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Fonction%20sur%20Tableau.html">nœud Fonction sur Tableau</a>, nous utiliserons la fonction <em>Item</em> pour accéder à l'élément 0 de <code>weather</code> (le premier élément du tableau).   </p>
+<p>Nous intégrerons ce résultat à une variable à l'aide du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Cr%C3%A9er%20une%20variable.html">nœud Créer une variable</a> pour pouvoir exploiter les champs string <code>icon</code> et <code>description</code> avec le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Explorer%20un%20objet.html">nœud Explorer un objet</a>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_data_weather.png" />   </p>
+<p>Nous pouvons ajouter la donnée <code>icon</code> directement dans notre <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Editer%20un%20Smart%20Object.html">nœud Éditer un Smart Object</a>. <br />
+Pour la description, nous la formaterons grâce au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Formule.html">nœud Formule</a> et la formule <code>PROPER()</code> qui permet de mettre en majuscule la première lettre de chaque chaîne de caractères.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_edit_config.png" />   </p>
+<p>Lorsqu'on regarde les propriétés que l'on peut éditer dans notre <a href="../_glossaire/Glossaire.html">Smart Object</a>, il ne nous reste plus qu'à indiquer la propriété <em>Vent</em> (les propriétés <em>Ville</em> et <em>Units</em> sont renseignées par d'autres <a href="../_glossaire/Glossaire.html">smartflows</a>).   </p>
+<p>La <a href="https://openweathermap.org/current#geocoding" target="_blank" class="external-link" target="_blank" class="external-link">documentation Open Weather Map</a> nous indique que cette donnée est envoyée en mètre/seconde lorsque le système d'unités est en métrique et en miles/heure lorsque le système d'unités est impériale.   </p>
+<p>Avoir la vitesse du vent en mètre/seconde ne nous intéresse pas beaucoup, nous voulons l'afficher en km/heure pour que la donnée soit plus parlante.   </p>
+<p>Pour cela, nous ajouterons au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Explorer%20un%20objet.html">nœud Explorer un objet</a> le champ <em>wind</em> de type objet, que nous explorerons de nouveau pour accéder au champ <em>speed</em>. <br />
+Nous transformerons ensuite cette vitesse avec deux <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Formule.html">nœuds Formule</a>, le premier avec la formule <code>PRODUCT()</code> pour multiplier la vitesse par 3.6 pour passer en km/h et le second avec la formule <code>ROUNDUP()</code> pour arrondir le résultat.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_transform_data.png" />   </p>
+<p>Cette transformation ne devant se faire que pour le système d'unités métrique, nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Conditions.html">nœud Conditions</a>:   </p>
 <ul>
-<li><a href="./_glossaire/Glossaire.html#data-modeler">Data Modeler</a>    </li>
-<li><a href="./_glossaire/Glossaire.html#database-editor">Database Editor</a>   </li>
-<li><a href="./_glossaire/Glossaire.html#liste-générique">Liste générique</a>   </li>
+<li>si la propriété <code>Units</code> de notre <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>config</code> est égale à <code>metric</code>, création d'une variable <code>wind_speed</code> avec le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Cr%C3%A9er%20une%20variable.html">nœud Créer une variable</a> qui applique notre transformation   </li>
+<li>sinon, création de la variable <code>wind_speed</code> directement depuis la donnée <code>speed</code> récupérée de l'API sans transformation.   </li>
 </ul>
-<h2 id="chapitre-4-creer-votre-ui">Chapitre 4 - Créer votre UI</h2>
-<p>C'est le chapitre le plus visuel (quoi que...), il vous présente l'outil <a href="./_glossaire/Glossaire.html">UI Composer</a> capable de créer de A à Z le visuel de votre application grâce aux nombreux <a href="./_glossaire/Glossaire.html#widget">widgets</a>. Vous trouverez la liste -&gt; <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/3%20-%20Les%20widgets.html">ici</a> <br />
-Pour comprendre comment fonctionne l'outil, vous pouvez commencer par <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/0%20-%20L%27UI%20Composer.html">l'interface de design</a>   </p>
-<h2 id="chapitre-5-workflow-creer-votre-logique-metier">Chapitre 5 - Workflow, créer votre logique métier</h2>
-<p>Probablement un des arguments différenciants qui vous ont fait choisir Vision : la puissance de nos <a href="./_glossaire/Glossaire.html">workflows</a>. Inspiré par notre connaissance de système de noeuds complexes, à l'instart d'Unreal Engine, le <a href="./_glossaire/Glossaire.html#workflow-editor">Workflow Editor</a> est l'outil qui va vous permettre de traduire votre logique métier en succession de tâches concrètes. <br />
-Vous pouvez commencer par <a href="./05%20-%20Workflows%2C%20cr%C3%A9er%20votre%20logique%20m%C3%A9tier/0%20-%20Le%20concept%20de%20visual%20programming.html">le concept de visual programming</a>, cela vous permettra de bien comprendre et maîtriser les <a href="./_glossaire/Glossaire.html">workflows</a>. <br />
-Un <a href="./_glossaire/Glossaire.html">workflow</a> se sert de <a href="./_glossaire/Glossaire.html#noeud">noeud</a>s et nous avons leur documentation -&gt;<a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">ici</a>   </p>
-<h2 id="chapitre-6-smartflows-connecter-vos-apps">Chapitre 6 - Smartflows, connecter vos apps</h2>
-<p>Les <a href="./_glossaire/Glossaire.html">smartflows</a> sont des <a href="./_glossaire/Glossaire.html">workflows</a> dédiés au traitement de la donnée. Ils ne génèrent pas d'interface graphique et ont des noeuds spécifiques de connexion API, base de données et FTP. <br />
-Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">le concept de smartflow</a> si vous voulez en apprendre plus.   </p>
-<h2 id="chapitre-7-generer-des-rapports">Chapitre 7 - Générer des rapports</h2>
-<p>Pour générer des documents (doc, xlsx, pdf etc.), Vision utilise un <a href="./07%20-%20G%C3%A9n%C3%A9rer%20des%20rapports/0%20-%20Le%20syst%C3%A8me%20de%20template%20et%20markups.html">un système de template</a> et un noeud spécifique à intégrer dans vos <a href="./_glossaire/Glossaire.html">workflows</a> ou <a href="./_glossaire/Glossaire.html">smartflows</a>.   </p>
-<h2 id="chapitre-8-authentification-et-autorisation">Chapitre 8 - Authentification et autorisation</h2>
-<p>Vision utilise des rôles ou groupes de sécurité pour définir ses autorisations. Ce chapitre concentre <a href="./08%20-%20Authentification%20et%20autorisation/0%20-%20Les%20principes%20de%20base.html">les principes de base</a>.   </p>
-<h2 id="chapitre-9-bonnes-pratiques">Chapitre 9 - Bonnes pratiques</h2>
-<p>Basées sur nos expériences, ce chapitre est un recueil de bonnes pratiques sur différents sujets:   </p>
-<ul>
-<li><a href="./09%20-%20Bonnes%20pratiques/Bien%20mod%C3%A9liser.html">Bien modéliser</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Organiser%20vos%20apps.html">Organiser vos apps</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Soyez%20logique.html">La logique de votre application</a>   </li>
-</ul>
-<p>Et le notre vision de l'incorporation des techniques de <a href="./not_created.html" class="nonexistent-link">Design Thinking</a> avec l'utilisation de Vision.   </p>
-<h2 id="chapitre-10-comment-faire">Chapitre 10 - Comment faire ...</h2>
-<p>Ce chapitre recense les tutoriels, tips et astuces des usages du Studio : <a href="./10%20-%20Comment%20faire/0%20-%20Sommaire.html">Liste des "How to"</a>   </p>
-<h2 id="references-sur-les-noeuds">Références sur les noeuds</h2>
-<p>Sans oublier <a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">0 - Liste des noeuds</a>   </p>
-<h1 id="un-dernier-mot">Un dernier mot...</h1>
-<p>Cette documentation est en constante évolution et nous prenons un soin particulier à l'entretenir. Nous nous nourrissons de notre propre expérience sur la technologie mais également et principalement de celle de nos clients, des retours que nous avons de la communauté et des tickets support.   </p>
-<p>Alors n'hésitez pas à nous remonter des suggestions, améliorations, corrections à cette adresse helpdesk@algotech.vision nous serons ravis de les intégrer !   </p>
-<p><img alt="" src="./_assets/images/air-kiss-man-13.gif" /></p></div>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_wind_speed.png" />   </p>
+<blockquote>
+<p>Pour tester facilement, nous pouvons remplacer le champ à comparer du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Conditions.html">nœud Conditions</a> par un texte (avec les valeurs <code>metric</code> ou <code>imperial</code> grâce au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Formule.html">nœud Formule</a>).   </p>
+</blockquote>
+<p>La dernière étape consiste à ajouter le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/R%C3%A9sultat%20du%20smartflow.html">nœud Résultat du smartflow</a> pour qu'il renvoie notre <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>config</code> mis à jour, puis d'ajouter le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/FIN.html">nœud Fin</a> avec l'option <em>Sauvegarde</em> activée pour sauvegarder en base de données nos modifications.    </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_get_current_weather_result.png" />   </p>
+<p>Il ne nous reste plus qu'à supprimer notre variable <code>config_test</code>, brancher correctement toutes les entrées avec les propriétés de la variable <code>config</code> et le tour est joué, notre <a href="../_glossaire/Glossaire.html">smartflow</a> pour récupérer la météo est prêt à être publié ! 🤗   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_get_current_weather.gif" />   </p>
+<h1 id="la-recherche-de-ville">La recherche de ville</h1>
+<p>Passons maintenant au <a href="../_glossaire/Glossaire.html">workflow</a> pour rechercher une ville.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_ville_wf_preview.gif" />   </p>
+<p>Pour fonctionner, ce <a href="../_glossaire/Glossaire.html">workflow</a> s'appuie sur un <a href="../_glossaire/Glossaire.html">smartflow</a> qui liste les communes françaises provenant d'une API.   </p>
+<h2 id="le-smartflow-pour-recuperer-la-liste-des-communes-francaises">Le Smartflow pour récupérer la liste des communes françaises</h2>
+<p>Comme vous pouvez le remarquer, ce <a href="../_glossaire/Glossaire.html">smartflow</a> est encore plus simple que celui utilisé pour récupérer la météo 😋 !   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_sf_city_search_parameters.gif" />   </p>
+<p>Créons donc un nouveau smarflow que nous nommerons <em>get_city</em>. <br />
+Ce <a href="../_glossaire/Glossaire.html">smartflow</a> aura en entrée une variable de type <code>Paramètres de recherche</code> pour pouvoir accéder à la recherche.   </p>
+<div class="callout callout-info active" rasa="1">
+<div class="callout-title ">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="16" x2="12" y2="12"></line><line x1="12" y1="8" x2="12.01" y2="8"></line></svg>
+</div>
+<div class="callout-title-name">Info
+</div>
+</div>
+<div class="callout-content">
+<p>Les paramètres de recherche sont utilisés en interne pour injecter les informations de recherche et de pagination d'un widget itérable (tableau, liste) ou d'une tâche itérable (Liste) à un <a href="../_glossaire/Glossaire.html">smartflow</a>.</p>
+<p>Plus d'informations sur l'utilisation des paramètres de recherche <a href="../not_created.html" class="nonexistent-link">ici</a>.</p>
+</div>
+</div>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_get_city_names.png" />   </p>
+<p>La première étape est la requête à l'<a href="https://geo.api.gouv.fr/decoupage-administratif/communes#name" target="_blank" class="external-link" target="_blank" class="external-link">API Découpage administratif des communes</a> qui ne nécessite pas de clé API. <br />
+Nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Service.html">nœud Service</a> que nous implémenterons grâce à la documentation :   </p>
+<table>
+<thead>
+<tr>
+<th>Entrée</th>
+<th>Valeur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Type</td>
+<td>Get</td>
+</tr>
+<tr>
+<td>Type de réponse</td>
+<td>Json</td>
+</tr>
+<tr>
+<td>Url</td>
+<td><a href="https://geo.api.gouv.fr/communes" target="_blank" class="external-link">https://geo.api.gouv.fr/communes</a></td>
+</tr>
+<tr>
+<td>Clé-Valeur</td>
+<td>Vrai</td>
+</tr>
+</tbody>
+</table>
+<p>Ensuite pour les paramètres :    </p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nom</td>
+<td>chaîne de caractères</td>
+<td>Nous utiliserons la propriété <code>search</code> de la variable <code>search-parameters</code></td>
+</tr>
+<tr>
+<td>boost</td>
+<td>chaîne de caractères</td>
+<td>Nous utiliserons <code>population</code> pour trier les résultats par population</td>
+</tr>
+<tr>
+<td>limit</td>
+<td>chaîne de caractères</td>
+<td>Nous mettrons une limite à <code>10</code> résultats par requête</td>
+</tr>
+</tbody>
+</table>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_city_names_service.png" />   </p>
+<p>Maintenant, vous avez bien sûr suivi la recommandation plus haut et vous êtes en train de tester le <a href="../_glossaire/Glossaire.html">smartflow</a> 😌 ! Vous remarquez donc que le résultat est bien un tableau d'objets comme mentionné dans la <a href="https://geo.api.gouv.fr/decoupage-administratif/communes#name" target="_blank" class="external-link" target="_blank" class="external-link">documentation de l'API</a>.   </p>
+<p>Cependant, nous sommes intéressés seulement par le nom de la commune. <br />
+C'est pour cela que nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Fonction%20sur%20Tableau.html">nœud Fonction sur Tableau</a> avec sa fonction <code>Map</code> pour récupérer un tableau de chaîne de caractères constitué uniquement de la propriété <code>nom</code>.   </p>
+<p>Ce tableau alimentera ensuite le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/R%C3%A9sultat%20du%20smartflow.html">nœud Résultat du smartflow</a>.   </p>
+<h2 id="le-workflow-avec-le-formulaire-de-recherche">Le workflow avec le formulaire de recherche</h2>
+<p>Le <a href="../_glossaire/Glossaire.html">smartflow</a> réalisé, nous pouvons passer à la réalisation du <a href="../_glossaire/Glossaire.html">workflow</a>. <br />
+Celui-ci prendra en entrée la variable <code>config</code> de type <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>Config Météo</code>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_wf_city.gif" />   </p>
+<p>La première action consiste à vider la propriété <code>Ville</code> actuelle de notre variable <code>config</code>. <br />
+Pour cela nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Editer%20un%20Smart%20Object.html">nœud Éditer un Smart Object</a> avec en entrée le <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>config</code>, nous attribuerons une chaîne de caractères vide à sa propriété <code>ville</code>.   </p>
+<blockquote>
+<p>Pour tester ce <a href="../_glossaire/Glossaire.html">workflow</a> vous pouvez utiliser la même technique que pour le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em>, c'est-à-dire créer un <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>config_test</code> de type <code>Config Météo</code>.   </p>
+</blockquote>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_edit_so_city.png" />   </p>
+<p>Nous faisons cela pour pouvoir utiliser le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Formulaire.html">nœud Formulaire</a> en ayant au préalable, assigné la valeur <strong>Liste prédictive</strong> dans l'<a href="../_glossaire/Glossaire.html#inspecteur">inspecteur</a> du champ <em>VILLE</em>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/Ville-liste-predictive.png" />   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_wf_form.png" />   </p>
+<p>Une fois que l'utilisateur de l'application aura choisi la ville, il faudra mettre à jour la météo associée... <br />
+Pour se faire, nous appellerons notre <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em> grâce au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Appeler%20un%20smartflow.html">nœud Appeler un smartflow</a>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_wf_call_sf.png" />   </p>
+<p>Si tout se passe bien et que le flow <code>Succès</code> du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Appeler%20un%20smartflow.html">nœud Appeler un smartflow</a> est emprunté, nous pouvons directement terminer le <a href="../_glossaire/Glossaire.html">workflow</a> avec le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/FIN.html">nœud Fin</a> (avec un toast <em>Météo mise à jour</em>).   </p>
+<p>Mais dans le cas où l'utilisateur renseigne un mauvais nom de commune ou tout simplement que l'API de météo ne fonctionne pas pour la ville choisie, le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em> tombera en erreur. <br />
+Dans ce cas là, nous allons alerter l'utilisateur que l'opération ne s'est pas bien produite grâce au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Alerter.html">nœud Alerter</a> en choisissant le type d'alerte <code>erreur</code> et en renseignant un titre et un message d'erreur.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_wf_end.png" />   </p>
+<h1 id="mettre-a-jour-le-systeme-d-unites">Mettre à jour le système d'unités</h1>
+<p>Ce <a href="../_glossaire/Glossaire.html">smartflow</a>, que nous appellerons <em>set_weather_units</em>, va nous permettre de mettre à jour le système d'unités grâce au bouton de l'application que nous avons créé précédemment (°C| °F).   </p>
+<p>Ce <a href="../_glossaire/Glossaire.html">smartflow</a> est simple et va prendre deux variables en entrée : un <a href="../_glossaire/Glossaire.html">Smart Object</a> de type <code>Config Météo</code> et une string <code>units</code>. La variable <code>units</code> va définir le système d'unités et prendra la valeur <code>metric</code> ou <code>imperial</code>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_update_units.png" />   </p>
+<p>Nous allons simplement utiliser le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Editer%20un%20Smart%20Object.html">nœud Éditer un Smart Object</a> pour modifier la propriété <code>units</code> de la variable <code>config</code> par la variable d'entrée <code>units</code>. Ensuite, nous renverrons simplement l'objet <code>config</code> dans le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/R%C3%A9sultat%20du%20smartflow.html">nœud Résultat du Smartflow</a>.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_edit_so_units.png" />   </p>
+<h1 id="recuperer-le-smart-object-config-meteo">Récupérer le Smart Object Config Météo</h1>
+<p>Il nous reste encore un dernier <a href="../_glossaire/Glossaire.html">smartflow</a> à implémenter (oui oui le dernier 😇). <br />
+C'est celui qui va permettre à l'application de récupérer notre <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>Config Météo</code> en base de données. Appelons donc ce dernier <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_weather_config</em>.   </p>
+<p>Le but est de récupérer en base de données notre <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>Config Météo</code> qui sera unique et que l'on viendra modifier lorsque que l'on charge la météo ou change la ville.   </p>
+<p>Nous utiliserons le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Recherche.html">nœud Recherche</a> en le configurant sur le <a href="../_glossaire/Glossaire.html">Smart Model</a> <code>Config Météo</code>. <br />
+Nous brancherons ensuite au résultat le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Fonction%20sur%20Tableau.html">nœud Fonction sur Tableau</a> pour récupérer le premier item trouvé (<em>item en position 0</em>).   </p>
+<p>Une fois le <a href="../_glossaire/Glossaire.html">Smart Object</a> récupéré, nous pouvons utiliser le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Appeler%20un%20smartflow.html">nœud Appeler un Smartflow</a> pour appeler le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em> et mettre à jour notre objet récupéré.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_object_db.png" />   </p>
+<p>Et bien sûr nous lançons l'aperçu... et ça ne fonctionne pas 😬. Forcément, sans objet en base, ça ne peut pas fonctionner.   </p>
+<p>Pour cela, nous ajouterons une condition. <br />
+Dans le cas où l'application <em>Météo</em> est chargée pour la première fois, le <a href="../_glossaire/Glossaire.html">Smart Object</a> <code>Config Météo</code> sera créé en base de données.   </p>
+<p>Commençons par créer notre condition. <br />
+Pour cela nous allons brancher sur le résultat du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Recherche.html">nœud Recherche</a>, le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Fonction%20sur%20Tableau.html">nœud Fonction sur Tableau</a> auquel on applique la fonction <code>Length</code> pour connaître la longueur du tableau.   </p>
+<p>Nous branchons le résultat sur le champ à comparer du <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Conditions.html">nœud Conditions</a> auquel nous ajoutons un critère pour vérifier si la longueur du tableau est égale à 0.    </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_condition.png" />   </p>
+<p>Si la longueur de tableau est égale à 0, cela signifie qu'il n'y a pas d'objets en base de données de type <code>Config Météo</code>.   </p>
+<p>Nous bronchons sur le flux <em>Vrai</em> de la condition, le <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Cr%C3%A9er%20un%20Smart%20Object.html">nœud Créer un Smart Object</a> qui sera initialisé avec les propriétés <code>units</code> et <code>ville</code> renseignées pour faire fonctionner le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em>).   </p>
+<p>Nous appellerons le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em> (grâce au <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/Appeler%20un%20smartflow.html">nœud Appeler un Smartflow</a>) pour mettre à jour la météo dans notre <a href="../_glossaire/Glossaire.html">Smart Object</a> (<a href="../_glossaire/Glossaire.html">Smart Object</a> que nous nommerons <code>config</code>).   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_create_so.png" />   </p>
+<p>Si la condition est fausse et que l'objet est bien présent en base de données, nous appellerons directement le <a href="../_glossaire/Glossaire.html">smartflow</a> <em>get_current_weather</em> avec l'objet retourné par la recherche (en n'oubliant pas de nommer le résultat de l'appel du <a href="../_glossaire/Glossaire.html">smartflow</a> <code>config</code>).   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_condition_get_db.png" />   </p>
+<p>Finalement, il ne nous reste plus qu'à renvoyer notre <a href="../_glossaire/Glossaire.html">Smart Object</a> <em>config</em> mis à jour. <br />
+Il suffit pour cela de joindre les deux chemins sur le même nœud <a href="../R%C3%A9f%C3%A9rences%20des%20noeuds/R%C3%A9sultat%20du%20smartflow.html">Résultat du smartflow</a> et d'y brancher le noeud config.   </p>
+<p>Nous terminerons avec le nœud Fin.   </p>
+<p><img alt="" src="../_assets/images/vue%20d%27ensemble/meteo_app_sf_end_get_weather_config.png" />   </p>
+<p>Félicitations 👏 ! Vous êtes venu à bout de la logique !   </p>
+<hr />
+<p>Prochaine étape : <a href="../02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%205%20-%20%C3%89tablir%20les%20connexions.html">Étape 5 - Établir les connexions</a></p></div>
 <div class="note-footer">
-<div class="backlinks" style="display:none"></div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="../02 - Créer sa première application/Étape 3 - Créer ses interfaces.html">étape 3 - créer ses interfaces</a></li>
+</ul>
+</div>
 
 <div class="tags">
 
@@ -958,7 +1190,7 @@ Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%2
 
         </script>
 
-        <script src="./obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+        <script src="../obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
 
         
 

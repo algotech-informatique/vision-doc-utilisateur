@@ -16,7 +16,8 @@ html_custom_inclusions:
   - '<link rel="external" href="logo.png" />'
   - '<link rel="external" href="icon.png" />'
 toggles:
-  external_blank: True 
+  external_blank: True
+  relative_path_html: True
   process_all: True
   slugify_html_links: False
   features:

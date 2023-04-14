@@ -5,13 +5,9 @@
 <head>
         <!-- Page information -->
         <meta charset="UTF-8" />
-        <meta name="node_id" content="index">
+        <meta name="node_id" content="paramètres de recherche et de pagination">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< Updated upstream
-        <link rel="shortcut icon" href="favicon.ico" />
-=======
-        <link rel="shortcut icon" href=".favicon.ico" />
->>>>>>> Stashed changes
+        <link rel="shortcut icon" href="../..favicon.ico" />
 
         <!-- Set title -->
         <title>Documentation</title>
@@ -20,17 +16,10 @@
         <link rel="stylesheet" href="customizations.css" />
 <link rel="external" href="logo.png" />
 <link rel="external" href="icon.png" />
-<<<<<<< Updated upstream
-<script src="/obs.html/static/obsidian_core.js"></script>
-<script src="/obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="/obs.html/static/master.css" />
-<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
-=======
-<script src="./obs.html/static/obsidian_core.js"></script>
-<script src="./obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="./obs.html/static/master.css" />
-<script src="./obs.html/static/mermaid.9.0.1.min.js"></script>
->>>>>>> Stashed changes
+<script src="../../obs.html/static/obsidian_core.js"></script>
+<script src="../../obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="../../obs.html/static/master.css" />
+<script src="../../obs.html/static/mermaid.9.0.1.min.js"></script>
 <script>
   MathJax = {
     loader: {
@@ -52,16 +41,16 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-<script src="./obs.html/static/flexsearch.bundle.js"></script>
-<script src="./obs.html/static/pako.js"></script>
-<script src="./obs.html/static/search.js"></script>
-<script src="./obs.html/static/dirtree.js"></script>
+<script src="../../obs.html/static/flexsearch.bundle.js"></script>
+<script src="../../obs.html/static/pako.js"></script>
+<script src="../../obs.html/static/search.js"></script>
+<script src="../../obs.html/static/dirtree.js"></script>
 
 
         <!-- Onload tweaks -->
         <script>
-                const CURRENT_NODE = 'index';
-                const HTML_URL_PREFIX = '.';
+                const CURRENT_NODE = 'paramètres de recherche et de pagination';
+                const HTML_URL_PREFIX = '../..';
         </script>
 </head>
 
@@ -119,11 +108,7 @@
         <div id="page_holder" class="flex_col">
                 <div id="header" class="header">
                         <div id="header_flex" class="flex_row header_row">
-<<<<<<< Updated upstream
-                                <a href="index.html" id="homelink">
-=======
-                                <a href=".index.html" id="homelink">
->>>>>>> Stashed changes
+                                <a href="../..index.html" id="homelink">
                                         <img src="logo.png" alt="Studio" style="width: 150px"></a>
                                 <div id="navbar" class="navbar requires_js">
                                         <a class="navbar-link" href="/04 - Créer votre UI/La liste des widgets/Widget Board.html" title="Widgets">Widgets</a>
@@ -694,78 +679,57 @@
 </div>
                         </div>
                         <div class="container">
-                                <div class="content"><h1 id="introduction">Introduction</h1>
+                                <div class="content"><h1 id="parametres-de-recherche-et-de-pagination">Paramètres de recherche et de pagination</h1>
 <div class="toc">
 <ul>
-<li><a href="#introduction" class="anchor-link">Introduction</a></li>
-<li><a href="#les-sections" class="anchor-link">Les sections</a><ul>
-<li><a href="#chapitre-1-vue-d-ensemble" class="anchor-link">Chapitre 1  - Vue d'ensemble</a></li>
-<li><a href="#chapitre-2-creer-sa-premiere-application" class="anchor-link">Chapitre 2 - Créer sa première application</a></li>
-<li><a href="#chapitre-3-modeliser-vos-donnees" class="anchor-link">Chapitre 3 - Modéliser vos données</a></li>
-<li><a href="#chapitre-4-creer-votre-ui" class="anchor-link">Chapitre 4 - Créer votre UI</a></li>
-<li><a href="#chapitre-5-workflow-creer-votre-logique-metier" class="anchor-link">Chapitre 5 - Workflow, créer votre logique métier</a></li>
-<li><a href="#chapitre-6-smartflows-connecter-vos-apps" class="anchor-link">Chapitre 6 - Smartflows, connecter vos apps</a></li>
-<li><a href="#chapitre-7-generer-des-rapports" class="anchor-link">Chapitre 7 - Générer des rapports</a></li>
-<li><a href="#chapitre-8-authentification-et-autorisation" class="anchor-link">Chapitre 8 - Authentification et autorisation</a></li>
-<li><a href="#chapitre-9-bonnes-pratiques" class="anchor-link">Chapitre 9 - Bonnes pratiques</a></li>
-<li><a href="#chapitre-10-comment-faire" class="anchor-link">Chapitre 10 - Comment faire ...</a></li>
-<li><a href="#references-sur-les-noeuds" class="anchor-link">Références sur les noeuds</a></li>
+<li><a href="#parametres-de-recherche-et-de-pagination" class="anchor-link">Paramètres de recherche et de pagination</a><ul>
+<li><a href="#creer-une-api-avec-recherche-et-pagination" class="anchor-link">Créer une API avec recherche et pagination</a><ul>
+<li><a href="#etape-1" class="anchor-link">Etape 1</a></li>
 </ul>
 </li>
-<li><a href="#un-dernier-mot" class="anchor-link">Un dernier mot...</a></li>
+<li><a href="#utiliser-search-parameters" class="anchor-link">Utiliser search-parameters</a></li>
+</ul>
+</li>
 </ul>
 </div>
-<p>Bienvenue dans la documentation officielle de Vision Studio. <br />
-Le but de cette page est de présenter la technologie mais également la philosophie de cette documentation et les différents chapitres qu'elle aborde.   </p>
-<p>Cette documentation est basée sur l'expérience que nous avons de la technologie Vision. Nous avons réalisé de nombreuses applications et au moment où nous écrivons ces lignes, plusieurs de nos clients et partenaires intégrateurs utilisent quotidiennement notre Studio. <br />
-Nous présentons ici les différents modules et la façon dont nous recommandons leur usage.   </p>
-<p>De plus, l'ordre des chapitres suit la logique d'une création d'application avec Vision Studio. Si vous êtes expérimenté, ou avez suivi une formation, sentez-vous libre de sauter les sections que vous maîtrisez.   </p>
-<h1 id="les-sections">Les sections</h1>
-<h2 id="chapitre-1-vue-d-ensemble">Chapitre 1  - Vue d'ensemble</h2>
-<p>C'est le chapitre dans lequel vous vous trouvez et vous faites bien ! Car vous allez y trouvez:   </p>
+<p>les <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflows</a> permettent de traiter la data, la transformer et la récupérer pour pouvoir l'utiliser:   </p>
 <ul>
-<li>une description des différents modules et outils.   </li>
-<li>un gif animé de Benedict Cumberbatch à la fin de cette page   </li>
+<li>Dans les <a href="../../_assets/images/workflows/workflow-appeler-smartflow.png" target="_blank" class="external-link">workflows</a> ou <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflows</a>   </li>
+<li>Dans les <a href="../../04%20-%20Cr%C3%A9er%20votre%20UI/3%20-%20Les%20widgets.html"> widgets</a> de l’application créé avec le <a href="../../02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%203%20-%20Cr%C3%A9er%20ses%20interfaces.html">Designer</a>.   </li>
+<li>Directement en tant que <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/1%20-%20Cr%C3%A9er%20une%20API.html">API</a>   </li>
 </ul>
-<h2 id="chapitre-2-creer-sa-premiere-application">Chapitre 2 - Créer sa première application</h2>
-<p>Un rapide tutoriel commençant ici -&gt;  <a href="./02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%201%20-%20Sp%C3%A9cification%20de%20notre%20app.html">Étape 1 - Spécification de notre app</a> balayant les différents modules, sans rentrer dans la complexité.   </p>
-<h2 id="chapitre-3-modeliser-vos-donnees">Chapitre 3 - Modéliser vos données</h2>
-<p>Ce chapitre aborde la partie la plus importante lors de la création de votre application : <a href="./not_created.html" class="nonexistent-link">la modélisation de vos données</a>. Pour ce faire, Vision propose plusieurs outils :   </p>
+<p>Sauf en cas d'export de données, quand on créé un flux de données à partir d'un base de donnée ou à travers un API, il ne faut absolument pas permettre de récupérer toute la données dans une seul requête mais plutôt de segmenter la données en petit paquets. Cela permet de limiter la taille de données transféré par requête et améliore nettement les performance de l'application ou l'API qu'on est entrain de modéliser. <br />
+Il faut malgré tout laisser la possibilité de récupérer toutes les données à travers un système de pagination et recherche. <br />
+Sur Vision, cette notion est importante quand on conçoit un <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflow</a> qui récupère de la données soit directement dans la <a href="../../R%C3%A9f%C3%A9rences%20des%20noeuds/Recherche.html">base Vision</a> ou en interrogeant une <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/2%20-%20Utilisation%20des%20noeuds%20API%2C%20BDD%2C%20FTP.html">API</a> externe ou en se connectant à une <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/2%20-%20Utilisation%20des%20noeuds%20API%2C%20BDD%2C%20FTP.html"> Base de données externe</a>.   </p>
+<p>Dans cette partie, nous allons voir ensemble comment utiliser la pagination dans un <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflow</a> dans Vision. <br />
+Dans les exemples présenté ici, nous allons de récupérer les données d'un modèle User:   </p>
+<p><img src="../../_assets/images/rapports/mod%C3%A8le_user.png" width="300" alt="" title="" />   </p>
+<p>Il faut implémenter la database avec quelques User.   </p>
+<p><img src="../../_assets/images/rapports/database_user.png" width="650" alt="" title="" />   </p>
+<h2 id="creer-une-api-avec-recherche-et-pagination">Créer une API avec recherche et pagination</h2>
+<p>Dans cette exemple, nous allons créer une route Get Avec Vision qui va nous permettre de récupérer les données avec les querystring:   </p>
 <ul>
-<li><a href="./_glossaire/Glossaire.html#data-modeler">Data Modeler</a>    </li>
-<li><a href="./_glossaire/Glossaire.html#database-editor">Database Editor</a>   </li>
-<li><a href="./_glossaire/Glossaire.html#liste-générique">Liste générique</a>   </li>
+<li><strong>search</strong> : pour filtrer les données avec une recherche textuelle   </li>
+<li><strong>page</strong>: paginer les données   </li>
+<li><strong>limit</strong>: pour limiter le nombre de données récupéré   </li>
 </ul>
-<h2 id="chapitre-4-creer-votre-ui">Chapitre 4 - Créer votre UI</h2>
-<p>C'est le chapitre le plus visuel (quoi que...), il vous présente l'outil <a href="./_glossaire/Glossaire.html">UI Composer</a> capable de créer de A à Z le visuel de votre application grâce aux nombreux <a href="./_glossaire/Glossaire.html#widget">widgets</a>. Vous trouverez la liste -&gt; <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/3%20-%20Les%20widgets.html">ici</a> <br />
-Pour comprendre comment fonctionne l'outil, vous pouvez commencer par <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/0%20-%20L%27UI%20Composer.html">l'interface de design</a>   </p>
-<h2 id="chapitre-5-workflow-creer-votre-logique-metier">Chapitre 5 - Workflow, créer votre logique métier</h2>
-<p>Probablement un des arguments différenciants qui vous ont fait choisir Vision : la puissance de nos <a href="./_glossaire/Glossaire.html">workflows</a>. Inspiré par notre connaissance de système de noeuds complexes, à l'instart d'Unreal Engine, le <a href="./_glossaire/Glossaire.html#workflow-editor">Workflow Editor</a> est l'outil qui va vous permettre de traduire votre logique métier en succession de tâches concrètes. <br />
-Vous pouvez commencer par <a href="./05%20-%20Workflows%2C%20cr%C3%A9er%20votre%20logique%20m%C3%A9tier/0%20-%20Le%20concept%20de%20visual%20programming.html">le concept de visual programming</a>, cela vous permettra de bien comprendre et maîtriser les <a href="./_glossaire/Glossaire.html">workflows</a>. <br />
-Un <a href="./_glossaire/Glossaire.html">workflow</a> se sert de <a href="./_glossaire/Glossaire.html#noeud">noeud</a>s et nous avons leur documentation -&gt;<a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">ici</a>   </p>
-<h2 id="chapitre-6-smartflows-connecter-vos-apps">Chapitre 6 - Smartflows, connecter vos apps</h2>
-<p>Les <a href="./_glossaire/Glossaire.html">smartflows</a> sont des <a href="./_glossaire/Glossaire.html">workflows</a> dédiés au traitement de la donnée. Ils ne génèrent pas d'interface graphique et ont des noeuds spécifiques de connexion API, base de données et FTP. <br />
-Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">le concept de smartflow</a> si vous voulez en apprendre plus.   </p>
-<h2 id="chapitre-7-generer-des-rapports">Chapitre 7 - Générer des rapports</h2>
-<p>Pour générer des documents (doc, xlsx, pdf etc.), Vision utilise un <a href="./07%20-%20G%C3%A9n%C3%A9rer%20des%20rapports/0%20-%20Le%20syst%C3%A8me%20de%20template%20et%20markups.html">un système de template</a> et un noeud spécifique à intégrer dans vos <a href="./_glossaire/Glossaire.html">workflows</a> ou <a href="./_glossaire/Glossaire.html">smartflows</a>.   </p>
-<h2 id="chapitre-8-authentification-et-autorisation">Chapitre 8 - Authentification et autorisation</h2>
-<p>Vision utilise des rôles ou groupes de sécurité pour définir ses autorisations. Ce chapitre concentre <a href="./08%20-%20Authentification%20et%20autorisation/0%20-%20Les%20principes%20de%20base.html">les principes de base</a>.   </p>
-<h2 id="chapitre-9-bonnes-pratiques">Chapitre 9 - Bonnes pratiques</h2>
-<p>Basées sur nos expériences, ce chapitre est un recueil de bonnes pratiques sur différents sujets:   </p>
-<ul>
-<li><a href="./09%20-%20Bonnes%20pratiques/Bien%20mod%C3%A9liser.html">Bien modéliser</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Organiser%20vos%20apps.html">Organiser vos apps</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Soyez%20logique.html">La logique de votre application</a>   </li>
-</ul>
-<p>Et le notre vision de l'incorporation des techniques de <a href="./not_created.html" class="nonexistent-link">Design Thinking</a> avec l'utilisation de Vision.   </p>
-<h2 id="chapitre-10-comment-faire">Chapitre 10 - Comment faire ...</h2>
-<p>Ce chapitre recense les tutoriels, tips et astuces des usages du Studio : <a href="./10%20-%20Comment%20faire/0%20-%20Sommaire.html">Liste des "How to"</a>   </p>
-<h2 id="references-sur-les-noeuds">Références sur les noeuds</h2>
-<p>Sans oublier <a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">0 - Liste des noeuds</a>   </p>
-<h1 id="un-dernier-mot">Un dernier mot...</h1>
-<p>Cette documentation est en constante évolution et nous prenons un soin particulier à l'entretenir. Nous nous nourrissons de notre propre expérience sur la technologie mais également et principalement de celle de nos clients, des retours que nous avons de la communauté et des tickets support.   </p>
-<p>Alors n'hésitez pas à nous remonter des suggestions, améliorations, corrections à cette adresse helpdesk@algotech.vision nous serons ravis de les intégrer !   </p>
-<p><img alt="" src="./_assets/images/air-kiss-man-13.gif" /></p></div>
+<h3 id="etape-1">Etape 1</h3>
+<p>Pour faire ça il faut tout d'abord <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/1%20-%20Cr%C3%A9er%20une%20API.html"> créer une API</a> en spécifiant les paramètres précédents dans l'inspecteur dans la section paramètre de requête :   </p>
+<p><img alt="" src="../../_assets/images/smartflows/parm%C3%A8tres_inspecteur.png" />   </p>
+<p>Quand on déclare des <strong>paramètres de requêtes</strong>, ces derniers deviennent accessible en tant que variable dans le <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflow</a>   </p>
+<p><img alt="" src="../../_assets/images/smartflows/search_page_limit.png" />   </p>
+<p>On peut connecter ces paramètres sur le nœud recherche:   </p>
+<p><img alt="" src="../../_assets/images/smartflows/variables_search_page_limit.png" />   </p>
+<p>une fois le <a href="../../06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">smartflow</a> est publié on peut appeler la route avec postman ou avec curl :   </p>
+<div class="lang-curl">
+
+<div class="codehilite"><pre><span></span><code>curl https://votre-url-vision/api/connectors/dad_jokes?search=&amp;page=&amp;limit=
+</code></pre></div>
+
+
+</div>
+
+<h2 id="utiliser-search-parameters">Utiliser search-parameters</h2></div>
 <div class="note-footer">
 <div class="backlinks" style="display:none"></div>
 
@@ -958,7 +922,7 @@ Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%2
 
         </script>
 
-        <script src="./obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+        <script src="../../obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
 
         
 

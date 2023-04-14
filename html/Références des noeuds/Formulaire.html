@@ -5,13 +5,9 @@
 <head>
         <!-- Page information -->
         <meta charset="UTF-8" />
-        <meta name="node_id" content="index">
+        <meta name="node_id" content="formulaire">
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<<<<<<< Updated upstream
-        <link rel="shortcut icon" href="favicon.ico" />
-=======
-        <link rel="shortcut icon" href=".favicon.ico" />
->>>>>>> Stashed changes
+        <link rel="shortcut icon" href="..favicon.ico" />
 
         <!-- Set title -->
         <title>Documentation</title>
@@ -20,17 +16,10 @@
         <link rel="stylesheet" href="customizations.css" />
 <link rel="external" href="logo.png" />
 <link rel="external" href="icon.png" />
-<<<<<<< Updated upstream
-<script src="/obs.html/static/obsidian_core.js"></script>
-<script src="/obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="/obs.html/static/master.css" />
-<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
-=======
-<script src="./obs.html/static/obsidian_core.js"></script>
-<script src="./obs.html/static/encoding.js"></script>
-<link rel="stylesheet" href="./obs.html/static/master.css" />
-<script src="./obs.html/static/mermaid.9.0.1.min.js"></script>
->>>>>>> Stashed changes
+<script src="../obs.html/static/obsidian_core.js"></script>
+<script src="../obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="../obs.html/static/master.css" />
+<script src="../obs.html/static/mermaid.9.0.1.min.js"></script>
 <script>
   MathJax = {
     loader: {
@@ -52,16 +41,16 @@
 <script type="text/javascript" id="MathJax-script" async
   src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
 </script>
-<script src="./obs.html/static/flexsearch.bundle.js"></script>
-<script src="./obs.html/static/pako.js"></script>
-<script src="./obs.html/static/search.js"></script>
-<script src="./obs.html/static/dirtree.js"></script>
+<script src="../obs.html/static/flexsearch.bundle.js"></script>
+<script src="../obs.html/static/pako.js"></script>
+<script src="../obs.html/static/search.js"></script>
+<script src="../obs.html/static/dirtree.js"></script>
 
 
         <!-- Onload tweaks -->
         <script>
-                const CURRENT_NODE = 'index';
-                const HTML_URL_PREFIX = '.';
+                const CURRENT_NODE = 'formulaire';
+                const HTML_URL_PREFIX = '..';
         </script>
 </head>
 
@@ -119,11 +108,7 @@
         <div id="page_holder" class="flex_col">
                 <div id="header" class="header">
                         <div id="header_flex" class="flex_row header_row">
-<<<<<<< Updated upstream
-                                <a href="index.html" id="homelink">
-=======
-                                <a href=".index.html" id="homelink">
->>>>>>> Stashed changes
+                                <a href="..index.html" id="homelink">
                                         <img src="logo.png" alt="Studio" style="width: 150px"></a>
                                 <div id="navbar" class="navbar requires_js">
                                         <a class="navbar-link" href="/04 - Créer votre UI/La liste des widgets/Widget Board.html" title="Widgets">Widgets</a>
@@ -331,7 +316,7 @@
 		<li><a class="" href="../Références des noeuds/Filtrer des Smart Objects.html"  >Filtrer des Smart Objects</a></li>
 		<li><a class="" href="../Références des noeuds/Fonction sur Tableau.html"  >Fonction sur Tableau</a></li>
 		<li><a class="" href="../Références des noeuds/Fonction sur objets.html"  >Fonction sur objets</a></li>
-		<li><a class="" href="../Références des noeuds/Formulaire.html"  >Formulaire</a></li>
+		<li><a class="active" href="../Références des noeuds/Formulaire.html"  >Formulaire</a></li>
 		<li><a class="" href="../Références des noeuds/Formule.html"  >Formule</a></li>
 		<li><a class="" href="../Références des noeuds/Fusionner.html"  >Fusionner</a></li>
 		<li><a class="" href="../Références des noeuds/Json.html"  >Json</a></li>
@@ -694,80 +679,221 @@
 </div>
                         </div>
                         <div class="container">
-                                <div class="content"><h1 id="introduction">Introduction</h1>
+                                <div class="content"><h1 id="formulaire">Formulaire</h1>
 <div class="toc">
 <ul>
-<li><a href="#introduction" class="anchor-link">Introduction</a></li>
-<li><a href="#les-sections" class="anchor-link">Les sections</a><ul>
-<li><a href="#chapitre-1-vue-d-ensemble" class="anchor-link">Chapitre 1  - Vue d'ensemble</a></li>
-<li><a href="#chapitre-2-creer-sa-premiere-application" class="anchor-link">Chapitre 2 - Créer sa première application</a></li>
-<li><a href="#chapitre-3-modeliser-vos-donnees" class="anchor-link">Chapitre 3 - Modéliser vos données</a></li>
-<li><a href="#chapitre-4-creer-votre-ui" class="anchor-link">Chapitre 4 - Créer votre UI</a></li>
-<li><a href="#chapitre-5-workflow-creer-votre-logique-metier" class="anchor-link">Chapitre 5 - Workflow, créer votre logique métier</a></li>
-<li><a href="#chapitre-6-smartflows-connecter-vos-apps" class="anchor-link">Chapitre 6 - Smartflows, connecter vos apps</a></li>
-<li><a href="#chapitre-7-generer-des-rapports" class="anchor-link">Chapitre 7 - Générer des rapports</a></li>
-<li><a href="#chapitre-8-authentification-et-autorisation" class="anchor-link">Chapitre 8 - Authentification et autorisation</a></li>
-<li><a href="#chapitre-9-bonnes-pratiques" class="anchor-link">Chapitre 9 - Bonnes pratiques</a></li>
-<li><a href="#chapitre-10-comment-faire" class="anchor-link">Chapitre 10 - Comment faire ...</a></li>
-<li><a href="#references-sur-les-noeuds" class="anchor-link">Références sur les noeuds</a></li>
+<li><a href="#formulaire" class="anchor-link">Formulaire</a></li>
+<li><a href="#workflow" class="anchor-link">workflow</a><ul>
+<li><a href="#description" class="anchor-link">Description</a></li>
+<li><a href="#fonctionnement" class="anchor-link">Fonctionnement</a><ul>
+<li><a href="#entrees" class="anchor-link">Entrées</a></li>
 </ul>
 </li>
-<li><a href="#un-dernier-mot" class="anchor-link">Un dernier mot...</a></li>
+<li><a href="#utilisation" class="anchor-link">Utilisation</a><ul>
+<li><a href="#studio" class="anchor-link">Studio</a><ul>
+<li><a href="#configuration-des-champs" class="anchor-link">Configuration des champs</a><ul>
+<li><a href="#les-conditions" class="anchor-link">Les conditions</a></li>
+<li><a href="#champ-de-type-string" class="anchor-link">Champ de type string</a></li>
+<li><a href="#champ-de-type-liste-generique" class="anchor-link">Champ de type liste générique</a></li>
+<li><a href="#champ-de-type-booleen" class="anchor-link">Champ de type booléen</a></li>
+<li><a href="#champ-de-type-nombre" class="anchor-link">Champ de type nombre</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#player" class="anchor-link">Player</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </div>
-<p>Bienvenue dans la documentation officielle de Vision Studio. <br />
-Le but de cette page est de présenter la technologie mais également la philosophie de cette documentation et les différents chapitres qu'elle aborde.   </p>
-<p>Cette documentation est basée sur l'expérience que nous avons de la technologie Vision. Nous avons réalisé de nombreuses applications et au moment où nous écrivons ces lignes, plusieurs de nos clients et partenaires intégrateurs utilisent quotidiennement notre Studio. <br />
-Nous présentons ici les différents modules et la façon dont nous recommandons leur usage.   </p>
-<p>De plus, l'ordre des chapitres suit la logique d'une création d'application avec Vision Studio. Si vous êtes expérimenté, ou avez suivi une formation, sentez-vous libre de sauter les sections que vous maîtrisez.   </p>
-<h1 id="les-sections">Les sections</h1>
-<h2 id="chapitre-1-vue-d-ensemble">Chapitre 1  - Vue d'ensemble</h2>
-<p>C'est le chapitre dans lequel vous vous trouvez et vous faites bien ! Car vous allez y trouvez:   </p>
+<h1 id="workflow">workflow</h1>
+<h2 id="description">Description</h2>
+<p>La tâche <strong>Formulaire</strong> permet d'éditer un objet graphiquement via un formulaire.</p>
+<p>Les champs du formulaire sont générés automatiquement en fonction du type de la propriété.
+Si besoin, ceux-ci peuvent être personnalisés.</p>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>![[SN-FORM__description.png]]</p>
+<h3 id="entrees">Entrées</h3>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID</th>
+<th style="text-align: left;">Nom</th>
+<th style="text-align: left;">Type</th>
+<th style="text-align: left;">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Titre (texte affiché)</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Le titre du formulaire</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Smart Object</td>
+<td style="text-align: left;">so:</td>
+<td style="text-align: left;">Le <a href="../_glossaire/Glossaire.html#Smart Object">Smart Object</a> à éditer</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Smart Model à configurer</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Le <a href="../_glossaire/Glossaire.html#Smart Model">Smart Model</a> de l'objet à éditer.<br />Permet de paramétrer le formulaire pour les sous-objet sélectionné.<br /><br />Lorsque le modèle du <a href="../_glossaire/Glossaire.html#Smart Object">Smart Object</a> est inconnu, il est possible de créer plusieurs configurations.<br /> Lors de l'évaluation de la tâche, la configuration du modèle correspondant au <a href="../_glossaire/Glossaire.html#Smart Object">Smart Object</a> sera prise.</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Champs</td>
+<td style="text-align: left;">section</td>
+<td style="text-align: left;">Sélectionne les champs de l'objet à afficher, par défaut tous les champs sont affichés dans le formulaire</td>
+</tr>
+<tr>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Description</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">La description du formulaire</td>
+</tr>
+<tr>
+<td style="text-align: left;">6</td>
+<td style="text-align: left;">Lecture seule</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Permet de rendre le formulaire non éditable</td>
+</tr>
+<tr>
+<td style="text-align: left;">7</td>
+<td style="text-align: left;">Activer le taggage</td>
+<td style="text-align: left;">boolean</td>
+<td style="text-align: left;">Permet d'ajouter des tags à l'objet édité</td>
+</tr>
+<tr>
+<td style="text-align: left;">8</td>
+<td style="text-align: left;">Modèles de tag</td>
+<td style="text-align: left;">string</td>
+<td style="text-align: left;">Indique la liste de tags à utiliser pour tagger l'objet lorsque le taggage est activé</td>
+</tr>
+</tbody>
+</table>
+<h2 id="utilisation">Utilisation</h2>
+<div class="callout callout-tip active" rasa="1">
+<div class="callout-title ">
+<div class="callout-title-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="callout-icon"><path d="M8.5 14.5A2.5 2.5 0 0011 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 11-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 002.5 2.5z"></path></svg>
+</div>
+<div class="callout-title-name">Tip
+</div>
+</div>
+<div class="callout-content">
+<p>Retrouvez plusieurs cas d'usages de l'utilisation de la tâche formulaire sur la documentation du [[Créer un formulaire|worflow typique pour créer un formulaire]].</p>
+</div>
+</div>
+<h3 id="studio">Studio</h3>
+<p>![[SN-FORM__studio.png]]</p>
+<h4 id="configuration-des-champs">Configuration des champs</h4>
+<p>Chaque champ affiché par le formulaire peut être configuré depuis l'[[Glossaire#inspecteur|inspecteur]]. Les options de configuration dépendent du type du champ du <a href="../_glossaire/Glossaire.html#Smart Object">Smart Object</a>.</p>
+<h5 id="les-conditions">Les conditions</h5>
+<p>Pour chaque champ, on retrouve une section qui permet de configurer des conditions d'affichage ou d'édition du champ.</p>
+<p>![[conditions.png]]</p>
+<p>La condition se base sur la valeur d'une des propriétés du <a href="../_glossaire/Glossaire.html#Smart Object">Smart Object</a>, indépendamment du champ configuré.</p>
 <ul>
-<li>une description des différents modules et outils.   </li>
-<li>un gif animé de Benedict Cumberbatch à la fin de cette page   </li>
+<li>Une condition de type <em>Affichage</em> signifie que le champ sera affichée par le formulaire seulement si les conditions définies sont remplies.</li>
+<li>Une condition de type <em>Édition</em> signifie que le champ ne pourra être éditable depuis le formulaire seulement si les conditions définies sont remplies.</li>
 </ul>
-<h2 id="chapitre-2-creer-sa-premiere-application">Chapitre 2 - Créer sa première application</h2>
-<p>Un rapide tutoriel commençant ici -&gt;  <a href="./02%20-%20Cr%C3%A9er%20sa%20premi%C3%A8re%20application/%C3%89tape%201%20-%20Sp%C3%A9cification%20de%20notre%20app.html">Étape 1 - Spécification de notre app</a> balayant les différents modules, sans rentrer dans la complexité.   </p>
-<h2 id="chapitre-3-modeliser-vos-donnees">Chapitre 3 - Modéliser vos données</h2>
-<p>Ce chapitre aborde la partie la plus importante lors de la création de votre application : <a href="./not_created.html" class="nonexistent-link">la modélisation de vos données</a>. Pour ce faire, Vision propose plusieurs outils :   </p>
-<ul>
-<li><a href="./_glossaire/Glossaire.html#data-modeler">Data Modeler</a>    </li>
-<li><a href="./_glossaire/Glossaire.html#database-editor">Database Editor</a>   </li>
-<li><a href="./_glossaire/Glossaire.html#liste-générique">Liste générique</a>   </li>
-</ul>
-<h2 id="chapitre-4-creer-votre-ui">Chapitre 4 - Créer votre UI</h2>
-<p>C'est le chapitre le plus visuel (quoi que...), il vous présente l'outil <a href="./_glossaire/Glossaire.html">UI Composer</a> capable de créer de A à Z le visuel de votre application grâce aux nombreux <a href="./_glossaire/Glossaire.html#widget">widgets</a>. Vous trouverez la liste -&gt; <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/3%20-%20Les%20widgets.html">ici</a> <br />
-Pour comprendre comment fonctionne l'outil, vous pouvez commencer par <a href="./04%20-%20Cr%C3%A9er%20votre%20UI/0%20-%20L%27UI%20Composer.html">l'interface de design</a>   </p>
-<h2 id="chapitre-5-workflow-creer-votre-logique-metier">Chapitre 5 - Workflow, créer votre logique métier</h2>
-<p>Probablement un des arguments différenciants qui vous ont fait choisir Vision : la puissance de nos <a href="./_glossaire/Glossaire.html">workflows</a>. Inspiré par notre connaissance de système de noeuds complexes, à l'instart d'Unreal Engine, le <a href="./_glossaire/Glossaire.html#workflow-editor">Workflow Editor</a> est l'outil qui va vous permettre de traduire votre logique métier en succession de tâches concrètes. <br />
-Vous pouvez commencer par <a href="./05%20-%20Workflows%2C%20cr%C3%A9er%20votre%20logique%20m%C3%A9tier/0%20-%20Le%20concept%20de%20visual%20programming.html">le concept de visual programming</a>, cela vous permettra de bien comprendre et maîtriser les <a href="./_glossaire/Glossaire.html">workflows</a>. <br />
-Un <a href="./_glossaire/Glossaire.html">workflow</a> se sert de <a href="./_glossaire/Glossaire.html#noeud">noeud</a>s et nous avons leur documentation -&gt;<a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">ici</a>   </p>
-<h2 id="chapitre-6-smartflows-connecter-vos-apps">Chapitre 6 - Smartflows, connecter vos apps</h2>
-<p>Les <a href="./_glossaire/Glossaire.html">smartflows</a> sont des <a href="./_glossaire/Glossaire.html">workflows</a> dédiés au traitement de la donnée. Ils ne génèrent pas d'interface graphique et ont des noeuds spécifiques de connexion API, base de données et FTP. <br />
-Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%20Le%20concept%20de%20smartflow.html">le concept de smartflow</a> si vous voulez en apprendre plus.   </p>
-<h2 id="chapitre-7-generer-des-rapports">Chapitre 7 - Générer des rapports</h2>
-<p>Pour générer des documents (doc, xlsx, pdf etc.), Vision utilise un <a href="./07%20-%20G%C3%A9n%C3%A9rer%20des%20rapports/0%20-%20Le%20syst%C3%A8me%20de%20template%20et%20markups.html">un système de template</a> et un noeud spécifique à intégrer dans vos <a href="./_glossaire/Glossaire.html">workflows</a> ou <a href="./_glossaire/Glossaire.html">smartflows</a>.   </p>
-<h2 id="chapitre-8-authentification-et-autorisation">Chapitre 8 - Authentification et autorisation</h2>
-<p>Vision utilise des rôles ou groupes de sécurité pour définir ses autorisations. Ce chapitre concentre <a href="./08%20-%20Authentification%20et%20autorisation/0%20-%20Les%20principes%20de%20base.html">les principes de base</a>.   </p>
-<h2 id="chapitre-9-bonnes-pratiques">Chapitre 9 - Bonnes pratiques</h2>
-<p>Basées sur nos expériences, ce chapitre est un recueil de bonnes pratiques sur différents sujets:   </p>
-<ul>
-<li><a href="./09%20-%20Bonnes%20pratiques/Bien%20mod%C3%A9liser.html">Bien modéliser</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Organiser%20vos%20apps.html">Organiser vos apps</a>   </li>
-<li><a href="./09%20-%20Bonnes%20pratiques/Soyez%20logique.html">La logique de votre application</a>   </li>
-</ul>
-<p>Et le notre vision de l'incorporation des techniques de <a href="./not_created.html" class="nonexistent-link">Design Thinking</a> avec l'utilisation de Vision.   </p>
-<h2 id="chapitre-10-comment-faire">Chapitre 10 - Comment faire ...</h2>
-<p>Ce chapitre recense les tutoriels, tips et astuces des usages du Studio : <a href="./10%20-%20Comment%20faire/0%20-%20Sommaire.html">Liste des "How to"</a>   </p>
-<h2 id="references-sur-les-noeuds">Références sur les noeuds</h2>
-<p>Sans oublier <a href="./R%C3%A9f%C3%A9rences%20des%20noeuds/0%20-%20Liste%20des%20noeuds.html">0 - Liste des noeuds</a>   </p>
-<h1 id="un-dernier-mot">Un dernier mot...</h1>
-<p>Cette documentation est en constante évolution et nous prenons un soin particulier à l'entretenir. Nous nous nourrissons de notre propre expérience sur la technologie mais également et principalement de celle de nos clients, des retours que nous avons de la communauté et des tickets support.   </p>
-<p>Alors n'hésitez pas à nous remonter des suggestions, améliorations, corrections à cette adresse helpdesk@algotech.vision nous serons ravis de les intégrer !   </p>
-<p><img alt="" src="./_assets/images/air-kiss-man-13.gif" /></p></div>
+<p>Plusieurs conditions peuvent être listées et le choix de l'opérateur (ET ou OU) peut être configuré.</p>
+<h5 id="champ-de-type-string">Champ de type string</h5>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Affichage</strong></td>
+<td><strong>Texte simple :</strong> Une saisie pour un texte court<br /><strong>Zone de texte :</strong> Une saisie pour un texte long qui peut s'étendre sur plusieurs lignes<br /><strong>Liste prédéfinie :</strong> Une liste prédéfinie de textes, la valeur doit obligatoirement se trouver dans la liste<br /><strong>Liste prédictive :</strong> Une liste de textes suggérée à l'utilisateur lorsqu'il saisit la donnée, mais la valeur n'est pas obligatoirement présente dans cette liste</td>
+</tr>
+<tr>
+<td><strong>Caractères</strong></td>
+<td><strong>Minimum :</strong> Le nombre minimum de caractères de la valeur saisie (par défaut 0)<br /><strong>Maximum :</strong> Le nombre maximum de caractères de la valeur saisie (par défaut pas de maximum)</td>
+</tr>
+<tr>
+<td><strong>Valeur du champ</strong></td>
+<td><strong>Défaut :</strong> Permet de saisir une valeur par défaut au champ</td>
+</tr>
+</tbody>
+</table>
+<h5 id="champ-de-type-liste-generique">Champ de type liste générique</h5>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Affichage</strong></td>
+<td><strong>Zone :</strong>  ![[settings_glist_zone.png]]<br /><br /><strong>Liste :</strong> ![[settings_glist_list.png]]<br /><br /><strong>Bulle :</strong> ![[settings_glist_bulles.png]]</td>
+</tr>
+<tr>
+<td><strong>Liste tri</strong></td>
+<td><strong>Par défaut :</strong> la liste n'est pas triée<br /><strong>Ascendant :</strong> tri alphabétique et numérique croissant<br /><strong>Descendant :</strong> tri alphabétique et numérique décroissant<br /><strong>Aléatoire :</strong> Les éléments de la liste sont affichés aléatoirement</td>
+</tr>
+<tr>
+<td><strong>Options</strong></td>
+<td><strong>Branchée :</strong> Permet de brancher la liste générique (retrouvez <a href="../05%20-%20Workflows%2C%20cr%C3%A9er%20votre%20logique%20m%C3%A9tier/Workflows%20typiques/Cr%C3%A9er%20un%20formulaire.html#Liste prédéfinie">ici</a> un cas d'usage)</td>
+</tr>
+</tbody>
+</table>
+<h5 id="champ-de-type-booleen">Champ de type booléen</h5>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Affichage</strong></td>
+<td><strong>Switch :</strong> ![[settings_bool_switch.png]]<br /><br /><strong>Checkbox :</strong> ![[settings_bool_checkbox.png]]<br /><br /><strong>Oui/Non :</strong> ![[settings_bool_yesno.png]]</td>
+</tr>
+</tbody>
+</table>
+<h5 id="champ-de-type-nombre">Champ de type nombre</h5>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Utilisation</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Affichage</strong></td>
+<td>L'affichage du nombre peut être par défaut, c'est-à-dire sans troncage, ou il peut être configurable pour afficher seulement des valeurs entières ou afficher 2 chiffres après la virgule</td>
+</tr>
+</tbody>
+</table>
+<h3 id="player">Player</h3>
+<p>![[SN-FORM__player.gif]]</p></div>
 <div class="note-footer">
-<div class="backlinks" style="display:none"></div>
+<div class="backlinks">
+<h2>Backlinks</h2>
+<ul>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/Workflows typiques/Créer un magnet.html">créer un magnet</a></li>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/Workflows typiques/Créer un formulaire.html">créer un formulaire</a></li>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/5 - Les liaisons de type data.html">5 - les liaisons de type data</a></li>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/3 - La signification des couleurs.html">3 - la signification des couleurs</a></li>
+	<li><a class="backlink" href="../Références des noeuds/Liste générique.html">liste générique</a></li>
+	<li><a class="backlink" href="../02 - Créer sa première application/Étape 4 - Créer sa logique.html">étape 4 - créer sa logique</a></li>
+	<li><a class="backlink" href="../Références des noeuds/0 - Liste des noeuds.html">0 - liste des noeuds</a></li>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/Workflows typiques/Modifier un Smart Object.html">modifier un smart object</a></li>
+	<li><a class="backlink" href="../05 - Workflows, créer votre logique métier/Workflows typiques/Générer un rapport.html">générer un rapport</a></li>
+</ul>
+</div>
 
 <div class="tags">
 
@@ -958,7 +1084,7 @@ Commencez par <a href="./06%20-%20Smartflows%2C%20connecter%20vos%20apps/0%20-%2
 
         </script>
 
-        <script src="./obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+        <script src="../obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
 
         
 
