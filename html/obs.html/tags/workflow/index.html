@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+        <!-- Page information -->
+        <meta charset="UTF-8" />
+        <meta name="node_id" content="none">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="shortcut icon" href="/favicon.ico" />
+
+        <!-- Set title -->
+        <title>Documentation</title>
+
+        <!-- Includes -->
+        <link rel="stylesheet" href="/customizations.css" />
+<link rel="external" href="/logo.png" />
+<link rel="external" href="/icon.png" />
+<script src="/obs.html/static/obsidian_core.js"></script>
+<script src="/obs.html/static/encoding.js"></script>
+<link rel="stylesheet" href="/obs.html/static/master.css" />
+<script src="/obs.html/static/mermaid.9.0.1.min.js"></script>
+<script>
+  MathJax = {
+    loader: {
+      load: [
+        '[tex]/action',
+        'output/chtml',
+        '[tex]/centernot'
+      ]
+    },
+    tex: {
+      inlineMath: [ ["\\(","\\)"] ],
+      displayMath: [ ["\\[","\\]"] ],
+      processEscapes: true,
+      processEnvironments: true,
+      packages: {'[+]': ['centernot']}
+    }
+  };
+</script>
+<script type="text/javascript" id="MathJax-script" async
+  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<script src="/obs.html/static/flexsearch.bundle.js"></script>
+<script src="/obs.html/static/pako.js"></script>
+<script src="/obs.html/static/search.js"></script>
+<script src="/obs.html/static/dirtree.js"></script>
+<link rel="stylesheet" href="/obs.html/static/taglist.css" />
+
+        <!-- Onload tweaks -->
+        <script>
+                const CURRENT_NODE = 'none';
+                const HTML_URL_PREFIX = '';
+        </script>
+</head>
+
+<body class="theme-obs-light">
+        <div id="antiflash" style="display: none;"></div>
+        <script>
+                document.getElementById('antiflash').style.display = 'block';
+        </script>
+        <div id="search-master-div">
+    <div id="search-slab" king_ramses="return the slaaab">
+            <div id="search-controls">
+                    <input id="search_string" placeholder="Type to search notes" type="text" />
+                    <div class="tooltip" style="display: none;">
+                        <input type="checkbox" id="hard_search" name="hard" />
+                        <span class="tooltiptext">Hard search (require exact match)</span>
+                    </div>
+                    <div id="search-results-box">
+                        <div id="search-results"></div>
+                    </div>
+                    <div id="search-instructions">
+                        <div class="prompt-instruction">
+                                <b>esc</b> to dismiss
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+
+<script>
+    document.getElementById("search-master-div").addEventListener('click', e => {
+            if(e.target !== e.currentTarget){
+                    return
+            }
+            toggle_id('search-master-div');
+    })
+    document.getElementById("search_string").addEventListener("input", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    }); 
+    document.getElementById("hard_search").addEventListener("click", function(event) {
+            setTimeout( () =>run_search('search_string', 'hard_search'), 100 );
+    });
+
+    window.addEventListener('keydown', e => {
+        if((e.key=='Escape'||e.key=='Esc'||e.keyCode==27)){
+            toggle_id('search-master-div');
+            return false;
+        } 
+    }, true);
+
+    function click_list_link(element){
+        element.parentElement.getElementsByTagName('a')[0].click()
+    }
+</script>
+
+        <div id="page_holder" class="flex_col">
+                <div id="header" class="header">
+                        <div id="header_flex" class="flex_row header_row">
+                                <a href="/index.html" id="homelink">
+                                        <img src="/logo.png" alt="Studio" style="width: 150px"></a>
+                                <div id="navbar" class="navbar requires_js">
+                                        <a class="navbar-link" href="/04 - Créer votre UI/La liste des widgets/Widget Board.html" title="Widgets">Widgets</a>
+<a class="navbar-link" href="/Références des noeuds/Alerter.html" title="Tâches génériques">Tâches génériques</a>
+<a class="navbar-link" href="/01 - Vue d'ensemble/2 - Installer la Community Edition (CE).html" title="Installer VISION CE">Installer VISION CE</a>
+                                </div>
+                                <div class="icons">
+                                        <a href="https://www.linkedin.com/company/algotech-informatique/"
+                                                target="_blank">
+                                                <img src="/linkedin.png" alt="linkedin"></a>
+                                        <a href="https://www.youtube.com/channel/UCN2nV4hpIqQReQGa9Si1C3Q/videos"
+                                                target="_blank">
+                                                <img src="/youtube.png" alt="youtube"></a>
+                                        <a href="https://www.algotech.vision/" target="_blank">
+                                                <img src="/globe-solid.png" alt="alotech.vision"></a>
+                                        <a href="https://twitter.com/AlgoTechFrance" target="_blank">
+                                                <img src="/square-twitter.png" alt="twitter"></a>
+                                </div>
+                        </div>
+                        
+                </div>
+                <div class="flex_row">
+                        <div id="left_pane" class="left_pane active">
+                                <div onclick="openSearch()" class="search-button">
+                                        <img src="/magnifying-glass-solid.png" alt="rechercher">
+                                        Rechercher
+                                </div>
+                                
+                        </div>
+                        <div class="container">
+                                <h1 id="notes">Notes</h1>
+<ul>
+<li><a href="/Références des noeuds/Créer un Smart Object.html">Créer un Smart Object</a></li>
+<li><a href="/Références des noeuds/Formulaire.html">Formulaire</a></li>
+<li><a href="/Références des noeuds/Recherche.html">Recherche</a></li>
+<li><a href="/Références des noeuds/Filtre.html">Filtre</a></li>
+<li><a href="/Références des noeuds/Source de données.html">Source de données</a></li>
+<li><a href="/Références des noeuds/Appeler un smartflow.html">Appeler un smartflow</a></li>
+<li><a href="/Références des noeuds/DÉPART.html">DÉPART</a></li>
+<li><a href="/Références des noeuds/FIN.html">FIN</a></li>
+<li><a href="/Références des noeuds/Choix multiple.html">Choix multiple</a></li>
+<li><a href="/Références des noeuds/Annuler.html">Annuler</a></li>
+<li><a href="/Références des noeuds/Conditions.html">Conditions</a></li>
+<li><a href="/Références des noeuds/Switch.html">Switch</a></li>
+<li><a href="/Références des noeuds/Boucle.html">Boucle</a></li>
+<li><a href="/Références des noeuds/Appeler un workflow.html">Appeler un workflow</a></li>
+<li><a href="/Références des noeuds/Service.html">Service</a></li>
+<li><a href="/Références des noeuds/Connexion base de données.html">Connexion base de données</a></li>
+<li><a href="/Références des noeuds/Requête base de données.html">Requête base de données</a></li>
+<li><a href="/Références des noeuds/Explorer un objet.html">Explorer un objet</a></li>
+<li><a href="/Références des noeuds/Transmuter des objets.html">Transmuter des objets</a></li>
+<li><a href="/Références des noeuds/Transmuter un fichier CSV.html">Transmuter un fichier CSV</a></li>
+<li><a href="/Références des noeuds/Résultat du smartflow.html">Résultat du smartflow</a></li>
+<li><a href="/Références des noeuds/Liste.html">Liste</a></li>
+<li><a href="/Références des noeuds/Saisir un texte.html">Saisir un texte</a></li>
+<li><a href="/Références des noeuds/Créer une variable.html">Créer une variable</a></li>
+<li><a href="/Références des noeuds/Télécharger les aptitudes.html">Télécharger les aptitudes</a></li>
+<li><a href="/Références des noeuds/Editer un Smart Object.html">Editer un Smart Object</a></li>
+<li><a href="/Références des noeuds/Supprimer un Smart Object.html">Supprimer un Smart Object</a></li>
+<li><a href="/Références des noeuds/Filtrer des Smart Objects.html">Filtrer des Smart Objects</a></li>
+<li><a href="/Références des noeuds/Explorer les métadonnées.html">Explorer les métadonnées</a></li>
+<li><a href="/Références des noeuds/Fusionner.html">Fusionner</a></li>
+<li><a href="/Références des noeuds/Uploader un fichier.html">Uploader un fichier</a></li>
+<li><a href="/Références des noeuds/Télécharger un fichier.html">Télécharger un fichier</a></li>
+<li><a href="/Références des noeuds/Editer un document.html">Editer un document</a></li>
+<li><a href="/Références des noeuds/Lister les documents.html">Lister les documents</a></li>
+<li><a href="/Références des noeuds/Lier un document.html">Lier un document</a></li>
+<li><a href="/Références des noeuds/Sélectionner un document.html">Sélectionner un document</a></li>
+<li><a href="/Références des noeuds/Verrouiller un document.html">Verrouiller un document</a></li>
+<li><a href="/Références des noeuds/Supprimer un document.html">Supprimer un document</a></li>
+<li><a href="/Références des noeuds/Visionner un fichier.html">Visionner un fichier</a></li>
+<li><a href="/Références des noeuds/Créer un rapport.html">Créer un rapport</a></li>
+<li><a href="/Références des noeuds/Convertir un document.html">Convertir un document</a></li>
+<li><a href="/Références des noeuds/Créer un fichier ZIP.html">Créer un fichier ZIP</a></li>
+<li><a href="/Références des noeuds/Créer un fichier.html">Créer un fichier</a></li>
+<li><a href="/Références des noeuds/Alerter.html">Alerter</a></li>
+<li><a href="/Références des noeuds/Envoyer un email.html">Envoyer un email</a></li>
+<li><a href="/Références des noeuds/Envoyer une notification.html">Envoyer une notification</a></li>
+<li><a href="/Références des noeuds/Revue.html">Revue</a></li>
+<li><a href="/Références des noeuds/Prendre une photo.html">Prendre une photo</a></li>
+<li><a href="/Références des noeuds/Se géolocaliser.html">Se géolocaliser</a></li>
+<li><a href="/Références des noeuds/Lancer le GPS.html">Lancer le GPS</a></li>
+<li><a href="/Références des noeuds/Lire un QRCode.html">Lire un QRCode</a></li>
+<li><a href="/Références des noeuds/Signer.html">Signer</a></li>
+<li><a href="/Références des noeuds/Texte formaté.html">Texte formaté</a></li>
+<li><a href="/Références des noeuds/Formule.html">Formule</a></li>
+<li><a href="/Références des noeuds/Json.html">Json</a></li>
+<li><a href="/Références des noeuds/Tableau.html">Tableau</a></li>
+<li><a href="/Références des noeuds/Fonction sur Tableau.html">Fonction sur Tableau</a></li>
+<li><a href="/Références des noeuds/Fonction sur objets.html">Fonction sur objets</a></li>
+<li><a href="/Références des noeuds/Localisation géographique.html">Localisation géographique</a></li>
+<li><a href="/Références des noeuds/Magnet.html">Magnet</a></li>
+<li><a href="/Références des noeuds/Réinitialiser.html">Réinitialiser</a></li>
+<li><a href="/Références des noeuds/Liste générique.html">Liste générique</a></li>
+<li><a href="/Références des noeuds/Utilisateurs.html">Utilisateurs</a></li>
+<li><a href="/Références des noeuds/Prendre une photo (auto).html">Prendre une photo (auto)</a></li>
+<li><a href="/Références des noeuds/Créer un Smart Object (UI).html">Créer un Smart Object (UI)</a></li>
+</ul>
+<blockquote>
+<p><a href="/obs.html/tags/index.html">View all tags</a></p>
+</blockquote>
+                                <!-- end content -->
+                        </div>
+                        
+                </div>
+        </div>
+
+        <script>
+                function handle_toggle_side_bar(e) {
+                        let header;
+                        let pane;
+                        let target = e.target
+
+                        // switch out the navbar button click for a header click
+                        if (target.id == 'left_pane_toggle_nav') {
+                                target = document.getElementById('left_pane_fold_header')
+                        }
+                        else if (target.id == 'right_pane_toggle_nav') {
+                                target = document.getElementById('right_pane_fold_header')
+                        }
+
+                        // get header and pane
+                        if (target.classList.contains('fold_header')) {
+                                header = target;
+                                pane = target.parentElement;
+                        }
+                        else {
+                                pane = target;
+                                header = target.getElementsByClassName('fold_header')[0];
+                        }
+                        toggle_side_bar(pane, header, true)
+                        e.stopPropagation();
+                }
+                function handle_toggle_side_bar_button(e) {
+                        document.getElementById('menu_toggle_button').click()
+                        handle_toggle_side_bar(e);
+                }
+
+                function toggle_side_bar(pane, header, save) {
+                        let active = (pane.classList.contains('active'))
+                        if (active) {
+                                disable_side_bar(pane, header, save);
+                        }
+                        else {
+                                enable_side_bar(pane, header, save);
+                        }
+                }
+                function enable_side_bar(pane, header, save) {
+                        pane.classList.add('active');
+                        pane.removeEventListener('click', handle_toggle_side_bar);
+                        header.addEventListener('click', handle_toggle_side_bar);
+                        set_correct_header_symbol(header);
+                        if (save) { save_panel_folding_state(header, true) }
+                }
+                function disable_side_bar(pane, header, save) {
+                        pane.classList.remove('active');
+                        pane.addEventListener('click', handle_toggle_side_bar);
+                        header.removeEventListener('click', handle_toggle_side_bar);
+                        set_correct_header_symbol(header);
+                        if (save) { save_panel_folding_state(header, false) }
+                }
+                function set_correct_header_symbol(header) {
+                        if (header) {
+                                let pane = header.parentElement;
+                                let symbol = [['>', '<'], ['<', '>']]
+                                symbol = symbol[Number(header.classList.contains('right_pane_fold_header'))][Number(pane.classList.contains('active'))];
+                                header.innerHTML = symbol
+                        }
+                        return header;
+                }
+                function panel_folding_get_panel_name(header) {
+                        return ['left', 'right'][Number(header.classList.contains('right_pane_fold_header'))]
+                }
+                function save_panel_folding_state(header, active) {
+                        ls_set('pane_folding_state_' + panel_folding_get_panel_name(header), Number(active));
+                }
+                function load_panel_folding_state(panel_name) {
+                        val = ls_get('pane_folding_state_' + panel_name)
+                        if (!val) { return { 'exists': false, 'value': null } }
+                        return { 'exists': true, 'value': Boolean(Number(val)) }
+                }
+                function set_pane_folding_start(left_header, right_header) {
+                        // small screen = closed
+                        let right_pane_enabled = true;
+                        let left_pane_enabled = true;
+                        let w = window.visualViewport.width
+                        if (w < 1000) {
+                                left_pane_enabled = false
+                        }
+                        if (w < 800) {
+                                right_pane_enabled = false
+                        }
+
+                        // get saved values if present
+                        let rval = load_panel_folding_state('right')
+                        if (rval['exists']) {
+                                right_pane_enabled = rval['value']
+                        }
+                        let lval = load_panel_folding_state('left')
+                        if (lval['exists']) {
+                                left_pane_enabled = lval['value']
+                        }
+
+                        // default = enabled, so we only need to disable
+                        if (!left_pane_enabled) {
+                                disable_side_bar(document.getElementById('left_pane'), document.getElementById('left_pane_fold_header'))
+                        }
+                        if (!right_pane_enabled) {
+                                disable_side_bar(document.getElementById('right_pane'), document.getElementById('right_pane_fold_header'))
+                        }
+                }
+
+                function init_pane_folding(header) {
+                        if (header) {
+                                set_correct_header_symbol(header);
+                                header.addEventListener('click', handle_toggle_side_bar);
+                        }
+                }
+
+
+                function openSearch() {
+                        // toggle search popup and continue with extra code if it is enabled this time
+                        if (toggle_id('search-master-div')) {
+                                // get input field and temporarily disable it
+                                let ss = document.getElementById('search_string');
+                                ss.value = 'Seach data initializing...';
+                                ss.readOnly = true;
+
+                                // load search data if not yet done so
+                                setTimeout(function () {
+                                        LoadSearchData()
+
+                                        // clear input and put focus on it so that we can start typing immediately
+                                        ss.value = '';
+                                        ss.readOnly = false;
+                                        ss.focus()
+                                        ss.select()
+                                }, 100);
+                        }
+                }
+
+                set_pane_folding_start()
+                init_pane_folding(document.getElementById('left_pane_fold_header'));
+                init_pane_folding(document.getElementById('right_pane_fold_header'));
+
+                const breadcrumbs = document.getElementsByClassName('breadcrumbs')[0]
+                if (breadcrumbs) {
+                        breadcrumbs.parentElement.style = 'width: 100%; text-align: right; display: block; margin: 0.5rem;position: absolute; top: 72px; left: 400px; background-color: white';
+                }
+                const elements = document.getElementsByClassName('dir-button');
+                Array.prototype.forEach.call(elements, element => {
+                        if (element.textContent.includes('_')) {
+                                element.style.display = 'none';
+                        }
+                });
+
+                // TREATMENT OF INDEX LINK
+                const links = document.getElementsByTagName('a');
+
+                // Loop through each link and find the one with the desired value
+                for (let i = 0; i < links.length; i++) {
+                        const link = links[i];
+                        if (link.innerHTML === 'index') {
+                                // Modify the name of the link
+                                const newName = 'Introduction';
+                                link.innerHTML = newName;
+
+                                // Then move to the first element
+                                const parent = document.querySelector('.dirtree');
+                                parent.insertBefore(link, parent.firstChild);
+
+                                link.style.padding = '0 0 5px 11px';
+                                break; // Exit the loop once the link has been modified
+                        }
+                }
+
+
+        </script>
+
+        <script src="/obs.html/static/load_dirtree_footer.js" type="text/javascript"></script>
+
+        
+
+
+
+
+</body>
+
+</html>
