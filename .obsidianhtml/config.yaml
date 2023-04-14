@@ -1,0 +1,42 @@
+obsidian_entrypoint_path_str: "../Studio/01 - Vue d'ensemble/0 - Introduction.md"
+exclude_glob:
+  - ".obsidian"
+site_name: "Documentation"
+navbar_links:
+  - name: "Widgets"
+    link: 04 - Créer votre UI/La liste des widgets/Widget Board.html
+  - name: "Tâches génériques"
+    link: Références des noeuds/Alerter.html
+  - name: "Installer VISION CE"
+    link: 01 - Vue d'ensemble/2 - Installer la Community Edition (CE).html
+html_url_prefix: ''
+html_template_path_str: './custom-template.html'
+html_custom_inclusions:
+  - '<link rel="stylesheet" href="customizations.css" />'
+  - '<link rel="external" href="logo.png" />'
+  - '<link rel="external" href="icon.png" />'
+toggles:
+  external_blank: True 
+  process_all: True
+  slugify_html_links: False
+  features:
+    table_of_contents:
+      add_toc_when_missing: True  
+    styling:
+      accent_color: '255, 0, 0'
+    theme_picker:
+      enabled: False
+    graph:
+      enabled: False
+    side_pane:             # only valid for documentation layout
+      left_pane:
+        enabled: True
+        width: 16rem
+        contents: dir_tree # <toc, tag_tree, dir_tree> 
+      right_pane:
+        enabled: True
+        width: 10rem
+        contents: toc      # <toc, tag_tree, dir_tree>     
+    embedded_search:
+      enabled: True    
+    
